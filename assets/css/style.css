@@ -21,35 +21,52 @@ footer {
   margin-left: 2rem;
 }
 
-#links{
-  width: 60%;
-}
-
-#header-links {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 2rem;
-  list-style-type: none;
-}
-
 .title {
   font-size: 30px;
-  text-shadow: #222;
+  text-shadow: 0 0 2px #d9d9d9;
   
 }
 
-#header-links li {
-  display: inline;
-  font-size: 2rem;
+ul {
+  list-style-type: none;
+}
+
+.header-links {
+  font-size: 20px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color:#dedede; 
+  text-decoration:none;   
 }
 
 #top-icons {
   display: flex;
   width: 100%;
   justify-content: right;
+  align-items: center;
   margin-top: 1rem;
-  margin-right: 4rem;
+}
+
+.social {
+  display: flex;
+  margin-right: 2rem;
+}
+
+.descrption {
+  text-align: center;
+}
+
+#anchors{
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #margin {
@@ -105,48 +122,48 @@ footer {
 /* Planets coloring by id */
 #sol {
 border: 1px solid #6b3c00;
-box-shadow: 0 0 6px #6b3c00;
+box-shadow: 0 0 3px #6b3c00;
 }
 
 #mercurio {
   border: 1px solid #8D888C ;
-box-shadow: 0 0 6px #8D888C;
+box-shadow: 0 0 3px #8D888C;
 }
 
 #venus {
   border: 1px solid #B9B5A8;
-box-shadow: 0 0 6px #B9B5A8;
+box-shadow: 0 0 3px #B9B5A8;
 
 }
 
 #terra {
-  border: 1px solid #012c00;
-  box-shadow: 0 0 6px #011c00;
+  border: 1px solid #014d00;
+  box-shadow: 0 0 3px #014d00;
 }
 
 #marte {
   border: 1px solid #751f02;
-  box-shadow: 0 0 6px #511400;
+  box-shadow: 0 0 3px #511400;
 }
 
 #jupiter {
   border: 1px solid #58452b;
-  box-shadow: 0 0 6px #58452b;
+  box-shadow: 0 0 3px #58452b;
 }
 
 #saturno {
   border: 1px solid #62573f;
-  box-shadow: 0 0 6px #62573f;
+  box-shadow: 0 0 3px #62573f;
 }
 
 #urano {
   border: 1px solid #3e4d56;
-  box-shadow: 0 0 6px #3e4d56;
+  box-shadow: 0 0 3px #3e4d56;
 }
 
 #netuno {
   border: 1px solid #314461;
-  box-shadow: 0 0 6px #314461;
+  box-shadow: 0 0 3px #314461;
 }
 
 #about {
@@ -156,12 +173,19 @@ box-shadow: 0 0 6px #B9B5A8;
 
 #left-about {
   width: 20%;
+  margin: 2rem;
 }
 
 #foto {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
+}
+
+#right-about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #newsletter {
@@ -171,6 +195,8 @@ box-shadow: 0 0 6px #B9B5A8;
   margin-bottom: 4rem;
   border-radius: 10px;
 }
+
+
 
 form {
   display: flex;
