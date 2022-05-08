@@ -1,0 +1,283 @@
+/* Estilização geral */
+/* ------------------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #0d0d0d;
+  color: #d9d9d9;
+}
+
+header,
+footer {
+  display: flex;
+  width: 100%;
+  height: 5rem;
+  margin: 0;
+  background-color: #161616;
+  box-shadow: 0 0 1rem #161616;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b2b2b2;
+  text-decoration: none;
+}
+
+#margin {
+  margin: 0 5rem 0 5rem;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #161616;
+  box-shadow: 0 0 3px #161616;
+}
+
+/* Tipografia */
+/* ------------------------------- */
+.title {
+  font-size: 30px;
+  text-shadow: 0 0 2px #d9d9d9;
+}
+
+.header-links {
+  font-size: 20px;
+}
+
+.descrption {
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  margin-right: 2rem;
+}
+
+/* Header */
+/* ------------------------------- */
+#page-title {
+  width: 20%;
+  margin-left: 2rem;
+}
+
+#anchors {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Main Section */
+/* ------------------------------- */
+#top-icons {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+#top-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Planet cards */
+/* ------------------------------- */
+#card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: min-content;
+  margin: 2rem;
+  border-radius: 10px;
+  border: 1px solid #121212;
+  background-color: #161616;
+}
+
+.card-picture {
+  width: 19rem;
+  height: 17rem;
+  border-radius: 11px;
+}
+
+.card-text {
+  margin: 5px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.planet-links {
+  text-align: center;
+  width: 50%;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  background-color: #333;
+  border: 1px solid #222;
+  box-shadow: 0 0 3px #222;
+}
+
+
+
+/* About Me */
+/* ------------------------------- */
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#left-about {
+  width: 20%;
+  margin: 2rem;
+}
+
+#foto {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+#right-about {
+  display: flex;
+  justify-content: center;
+}
+
+/* Newsletter / Forms */
+/* ------------------------------- */
+#newsletter {
+  display: flex;
+  justify-content: center;
+  background-color: #1c1c1c;
+  box-shadow: 0 0 1rem #131313;
+  padding: 2rem;
+  margin-bottom: 4rem;
+  border-radius: 10px;
+}
+
+#news-title {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  gap: 1rem;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 12px 20px;
+  margin: 8px 0;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #f4f4f4;
+  background-color: #333;
+  border: 1px solid #222;
+  border-radius: 10px;
+}
+
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border-color: #c08640; 
+  outline: none;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #c08640;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #9d6b2e;
+}
+
+/* Footer */
+/* ------------------------------- */
+#left-footer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+#right-footer {
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  margin-top: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.footer-text {
+  margin: 12px;
+}
+
+/* Planets coloring by id */
+/* ------------------------------- */
+#sol {
+  box-shadow: 0 0 25px #6b3c00;
+}
+
+#mercurio {
+  box-shadow: 0 0 25px #8d888c;
+}
+
+#venus {
+  box-shadow: 0 0 25px #b9b5a8;
+}
+
+#terra {
+  box-shadow: 0 0 25px #014d00;
+}
+
+#marte {
+
+  box-shadow: 0 0 25px #511400;
+}
+
+#jupiter {
+  box-shadow: 0 0 25px #58452b;
+}
+
+#saturno {
+  box-shadow: 0 0 25px #62573f;
+}
+
+#urano {
+  box-shadow: 0 0 25px #3e4d56;
+}
+
+#netuno {
+  box-shadow: 0 0 25px #314461;
+}
