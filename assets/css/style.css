@@ -105,9 +105,11 @@ a:hover {
 .card {
   display: flex;
   flex-direction: column;
+  align-items: center;
   max-width: min-content;
   margin: 2rem;
   border-radius: 10px;
+  border: 1px solid #121212;
   background-color: #161616;
 }
 
@@ -121,6 +123,17 @@ a:hover {
   margin: 5px;
   text-align: center;
   font-size: 15px;
+}
+
+.planet-links {
+  text-align: center;
+  width: 50%;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  background-color: #333;
+  border: 1px solid #222;
+  box-shadow: 0 0 3px #222;
 }
 
 /* About Me */
@@ -185,7 +198,12 @@ input[type="email"] {
   border-radius: 10px;
 }
 
-/* input[type=checkbox]  */
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border-color: #c08640;
+  outline: none;
+}
+
 input[type="submit"] {
   width: 100%;
   background-color: #c08640;
@@ -211,9 +229,11 @@ input[type="submit"]:hover {
 
 #right-footer {
   display: flex;
-  align-content: center;
   justify-content: right;
+  align-items: flex-end;
+  margin-top: 0;
   width: 50%;
+  height: 100%;
 }
 
 .footer-text {
@@ -223,46 +243,37 @@ input[type="submit"]:hover {
 /* Planets coloring by id */
 /* ------------------------------- */
 #sol {
-  border: 1px solid #6b3c00;
-  box-shadow: 0 0 3px #6b3c00;
+  box-shadow: 0 0 25px #6b3c00;
 }
 
 #mercurio {
-  border: 1px solid #8d888c;
-  box-shadow: 0 0 3px #8d888c;
+  box-shadow: 0 0 25px #8d888c;
 }
 
 #venus {
-  border: 1px solid #b9b5a8;
-  box-shadow: 0 0 3px #b9b5a8;
+  box-shadow: 0 0 25px #b9b5a8;
 }
 
 #terra {
-  border: 1px solid #014d00;
-  box-shadow: 0 0 3px #014d00;
+  box-shadow: 0 0 25px #014d00;
 }
 
 #marte {
-  border: 1px solid #751f02;
-  box-shadow: 0 0 3px #511400;
+  box-shadow: 0 0 25px #511400;
 }
 
 #jupiter {
-  border: 1px solid #58452b;
-  box-shadow: 0 0 3px #58452b;
+  box-shadow: 0 0 25px #58452b;
 }
 
 #saturno {
-  border: 1px solid #62573f;
-  box-shadow: 0 0 3px #62573f;
+  box-shadow: 0 0 25px #62573f;
 }
 
 #urano {
-  border: 1px solid #3e4d56;
-  box-shadow: 0 0 3px #3e4d56;
+  box-shadow: 0 0 25px #3e4d56;
 }
 
 #netuno {
-  border: 1px solid #314461;
-  box-shadow: 0 0 3px #314461;
+  box-shadow: 0 0 25px #314461;
 }
