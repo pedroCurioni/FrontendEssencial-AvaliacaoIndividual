@@ -1,8 +1,10 @@
+/* Estilização geral */
+/* ------------------------------- */
 body {
   margin: 0;
   padding: 0;
   font-family: "Source Sans Pro", sans-serif;
-  background-color: #111111;
+  background-color: #0d0d0d;
   color: #d9d9d9;
 }
 
@@ -12,27 +14,12 @@ footer {
   width: 100%;
   height: 5rem;
   margin: 0;
-  background-color: #0d0d0d;
-  box-shadow: 0 0 1rem #0d0d0d;
-}
-
-#page-title {
-  width: 20%;
-  margin-left: 2rem;
-}
-
-.title {
-  font-size: 30px;
-  text-shadow: 0 0 2px #d9d9d9;
-  
+  background-color: #161616;
+  box-shadow: 0 0 1rem #161616;
 }
 
 ul {
   list-style-type: none;
-}
-
-.header-links {
-  font-size: 20px;
 }
 
 a {
@@ -41,16 +28,34 @@ a {
 }
 
 a:hover {
-  color:#dedede; 
-  text-decoration:none;   
+  color: #b2b2b2;
+  text-decoration: none;
 }
 
-#top-icons {
-  display: flex;
+#margin {
+  margin: 0 5rem 0 5rem;
+}
+
+.line {
   width: 100%;
-  justify-content: right;
-  align-items: center;
-  margin-top: 1rem;
+  height: 1px;
+  background-color: #161616;
+  box-shadow: 0 0 3px #161616;
+}
+
+/* Tipografia */
+/* ------------------------------- */
+.title {
+  font-size: 30px;
+  text-shadow: 0 0 2px #d9d9d9;
+}
+
+.header-links {
+  font-size: 20px;
+}
+
+.descrption {
+  text-align: center;
 }
 
 .social {
@@ -58,19 +63,28 @@ a:hover {
   margin-right: 2rem;
 }
 
-.descrption {
-  text-align: center;
+/* Header */
+/* ------------------------------- */
+#page-title {
+  width: 20%;
+  margin-left: 2rem;
 }
 
-#anchors{
+#anchors {
   width: 60%;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-#margin {
-  margin: 0 5rem 0 5rem;
+/* Main Section */
+/* ------------------------------- */
+#top-icons {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+  align-items: center;
+  margin-top: 1rem;
 }
 
 #top-container {
@@ -80,18 +94,8 @@ a:hover {
   align-items: center;
 }
 
-.content-title {
-  font-size: 2rem;
-  margin: 10px;
-}
-
-.line {
-  width: 100%;
-  height: 1px;
-  background-color: rgba(34, 34, 34, 0.496);
-  box-shadow: 0 0 3px #222;
-}
-
+/* Planet cards */
+/* ------------------------------- */
 #card-grid {
   display: flex;
   flex-wrap: wrap;
@@ -104,7 +108,7 @@ a:hover {
   max-width: min-content;
   margin: 2rem;
   border-radius: 10px;
-  background-color: #222;
+  background-color: #161616;
 }
 
 .card-picture {
@@ -119,21 +123,80 @@ a:hover {
   font-size: 15px;
 }
 
+/* About Me */
+/* ------------------------------- */
+#about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#left-about {
+  width: 20%;
+  margin: 2rem;
+}
+
+#foto {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+#right-about {
+  display: flex;
+  justify-content: center;
+}
+
+/* Newsletter / Forms */
+/* ------------------------------- */
+#newsletter {
+  background-color: #1c1c1c;
+  box-shadow: 0 0 1rem #131313;
+  padding: 2rem;
+  margin-bottom: 4rem;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Footer */
+/* ------------------------------- */
+#left-footer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+#right-footer {
+  display: flex;
+  align-content: center;
+  justify-content: right;
+  width: 50%;
+}
+
+.footer-text {
+  margin: 12px;
+}
+
 /* Planets coloring by id */
+/* ------------------------------- */
 #sol {
-border: 1px solid #6b3c00;
-box-shadow: 0 0 3px #6b3c00;
+  border: 1px solid #6b3c00;
+  box-shadow: 0 0 3px #6b3c00;
 }
 
 #mercurio {
-  border: 1px solid #8D888C ;
-box-shadow: 0 0 3px #8D888C;
+  border: 1px solid #8d888c;
+  box-shadow: 0 0 3px #8d888c;
 }
 
 #venus {
-  border: 1px solid #B9B5A8;
-box-shadow: 0 0 3px #B9B5A8;
-
+  border: 1px solid #b9b5a8;
+  box-shadow: 0 0 3px #b9b5a8;
 }
 
 #terra {
@@ -164,60 +227,4 @@ box-shadow: 0 0 3px #B9B5A8;
 #netuno {
   border: 1px solid #314461;
   box-shadow: 0 0 3px #314461;
-}
-
-#about {
-  display: flex;
-  align-content: center;
-}
-
-#left-about {
-  width: 20%;
-  margin: 2rem;
-}
-
-#foto {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-}
-
-#right-about{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#newsletter {
-  background-color: #1c1c1c;
-  box-shadow: 0 0 1rem #131313;
-  padding: 2rem;
-  margin-bottom: 4rem;
-  border-radius: 10px;
-}
-
-
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.footer-text {
-  margin: 12px;
-}
-
-#left-footer {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-}
-
-#right-footer {
-  display: flex;
-  align-content: center;
-  justify-content: right;
-
-  width: 50%;
 }
