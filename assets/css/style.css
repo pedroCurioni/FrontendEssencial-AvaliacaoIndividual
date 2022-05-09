@@ -18,6 +18,10 @@ footer {
   box-shadow: 0 0 1rem #161616;
 }
 
+header {
+  align-items: center;
+}
+
 ul {
   list-style-type: none;
 }
@@ -80,6 +84,10 @@ a:hover {
   width: 100%;
 }
 
+#header-divider {
+  margin-right: 5rem;
+}
+
 #anchors {
   display: flex;
   justify-content: space-around;
@@ -88,10 +96,6 @@ a:hover {
 }
 
 @media (min-width: 320px) and (max-width: 560px) {
-  header {
-    align-items: center;
-  }
-
   #page-title {
     margin-left: 1rem;
     font-size: 10px;
@@ -105,6 +109,8 @@ a:hover {
     font-size: 10px;
     margin: 6px;
   }
+
+
 }
 
 @media (min-width: 561px) and (max-width: 1110px) {
