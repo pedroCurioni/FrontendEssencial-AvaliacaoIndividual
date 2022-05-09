@@ -43,6 +43,12 @@ a:hover {
   box-shadow: 0 0 3px #161616;
 }
 
+@media (max-width: 426px) {
+  #margin {
+    margin: 0 5rem 0 5rem;
+  }
+}
+
 /* Tipografia */
 /* ------------------------------- */
 .title {
@@ -52,6 +58,8 @@ a:hover {
 
 .header-links {
   font-size: 20px;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .descrption {
@@ -66,15 +74,47 @@ a:hover {
 /* Header */
 /* ------------------------------- */
 #page-title {
-  width: 20%;
+  display: flex;
+  align-items: center;
   margin-left: 2rem;
+  width: 100%;
 }
 
 #anchors {
-  width: 60%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
+}
+
+@media (min-width: 320px) and (max-width: 560px) {
+  header {
+    align-items: center;
+  }
+
+  #page-title {
+    margin-left: 1rem;
+    font-size: 10px;
+  }
+
+  #anchors {
+    width: 50%;
+  }
+
+  .header-links {
+    font-size: 10px;
+    margin: 6px;
+  }
+}
+
+@media (min-width: 561px) and (max-width: 1110px) {
+  header {
+    align-items: center;
+  }
+
+  #page-title {
+    margin-left: 1rem;
+  }
 }
 
 /* Main Section */
@@ -92,6 +132,22 @@ a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media (max-width: 426px) {
+  #top-icons {
+    display: none;
+  }
+
+  #top-container {
+    text-align: center;
+  }
+}
+
+@media (max-width: 625px) {
+  #top-container {
+    text-align: center;
+  }
 }
 
 /* Planet cards */
@@ -145,6 +201,9 @@ a:hover {
 }
 
 #left-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 20%;
   margin: 2rem;
 }
@@ -158,6 +217,12 @@ a:hover {
 #right-about {
   display: flex;
   justify-content: center;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  #about {
+    flex-direction: column;
+  }
 }
 
 /* Newsletter / Forms */
@@ -238,6 +303,18 @@ input[type="submit"]:hover {
 
 .footer-text {
   margin: 12px;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  footer {
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+  }
+
+  .social-icon {
+    width: 35px;
+  }
 }
 
 /* Planets coloring by id */
