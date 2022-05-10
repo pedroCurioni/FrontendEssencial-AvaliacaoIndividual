@@ -112,6 +112,10 @@ header {
     font-size: 0.8rem;
     margin: 6px;
   }
+
+  #header-divider {
+    display: none;
+  }
 }
 
 @media (min-width: 561px) and (max-width: 1110px) {
